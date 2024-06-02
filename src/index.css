@@ -20,6 +20,7 @@
   --fifth-clr: #555e6d;
   --sixth-clr: #005eff;
   --seventh-clr: #6e8efe;
+  --eight-clr: #252c39;
 
   --container-width-lg: 90%;
   --container-width-md: 88%;
@@ -73,30 +74,41 @@ img {
   object-fit: cover;
 }
 
+a {
+  color: var(--eight-clr);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary-clr);
+}
+
 .btn {
   display: inline-block;
   background: var(--primary-clr);
   color: var(--white-clr);
-  padding: 0.9rem 2rem;
+  padding: 0.7rem 1.7rem;
   border: 1px solid transparent;
   transition: var(--transition);
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   border-radius: 3rem;
   cursor: pointer;
 }
 
-.btn-primary {
+.btn.primary {
   border-color: var(--primary-clr);
   color: var(--primary-clr);
   background: transparent;
 }
 
 .btn:hover {
-  box-shadow: 0px 8px 19px rgba(166, 166, 166, 0.2),
-    inset 0px 4px 4px var(--seventh-clr), inset 0px -2px 4px rgba(0, 0, 0, 0.2);
+  border-color: var(--primary-clr);
+  color: var(--primary-clr);
+  background: transparent;
 }
 
-.btn-primary:hover {
-  box-shadow: none;
+.btn.primary:hover {
+  background: var(--primary-clr);
+  color: var(--white-clr);
 }
